@@ -1,0 +1,93 @@
+.fill-space{
+flex:1 1 auto;
+}
+.main_toolbar{
+width:100%;
+height:85px;
+  background-color: #fcfdfe;
+}
+
+.underline{
+    width: 66%;
+    margin-left: 11%;
+    border-top: 1px solid black;
+}
+.subheader{
+opacity:0.6;
+font-size: medium;
+margin-left:6%;
+}
+.menu{
+    margin-top: -1.5rem;
+    width: 1.5rem;
+}
+.notification{
+    margin-top: -1.2rem;
+    width: 1.2rem;
+}
+.buttonAlign{
+margin-top: -73%;
+}
+.swipeup{
+	width: 8%;
+    height: 6px;
+	opacity: 0.6;
+  border-radius: 100px;
+  background-color: #000000;
+}
+.timedistance{
+    width:90%;
+}
+.dot{
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background-color: #000000;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+.duration{
+color: #d39a00;
+font-weight: 500;
+    font-size: x-large;
+}
+.distance{
+color: #454545;
+font-size: 15px;
+    font-weight: 500;
+}
+.footer{
+height:65px;
+  background-color: #fcfdfe;
+}
+.map{
+position: absolute;
+    height: 100%;
+    max-width: 225%;
+}
+.footer1{
+padding-left: 5%;
+    width: 85%;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+  background-color: #fcfdfe;
+}
+
+.current{
+color: #60b12c;
+font-size: 13px;
+}
+.drop{
+   color: #f2523a;
+font-size: 13px;
+}
+.address{
+margin-bottom: 1rem;
+margin-top: 0.4rem;
+    font-weight: 500;
+    font-size: 15px;
+color: #2e2e2e;
+}
+.sidemenu{
+--width:40%;
+}

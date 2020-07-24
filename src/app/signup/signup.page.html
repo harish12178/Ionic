@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Signup</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<ion-card id="card">
+<ion-card-content>
+<form [formGroup]="signup_form">
+  <ion-item>
+    <ion-label position="stacked" >First Name*</ion-label>
+    <ion-input formControlName="fname"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Last Name</ion-label>
+    <ion-input formControlName="lname"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Age</ion-label>
+    <ion-input type="number" formControlName="age"></ion-input>
+  </ion-item>
+ 
+  <ion-item>
+    <ion-label position="stacked">Gender</ion-label>
+    <ion-select interface="action-sheet" formControlName="gender">
+      <ion-select-option value="male">Male</ion-select-option>
+      <ion-select-option value="female">Female</ion-select-option>
+      <ion-select-option value="others">Others</ion-select-option>
+    </ion-select>
+  </ion-item>
+    
+  <ion-item>
+    <ion-label position="stacked">Email*</ion-label>
+    <ion-input formControlName="email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Department</ion-label>
+    <ion-select interface="action-sheet" formControlName="dept">
+      <ion-select-option value="CSE">CSE</ion-select-option>
+      <ion-select-option value="IT">IT</ion-select-option>
+      <ion-select-option value="ECE">ECE</ion-select-option>
+      <ion-select-option value="EEE">EEE</ion-select-option>
+      <ion-select-option value="EIE">EIE</ion-select-option>
+      <ion-select-option value="Mech">Mech</ion-select-option>
+      <ion-select-option value="Civil">Civil</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Password*</ion-label>
+    <ion-input formControlName="pw"></ion-input>
+  </ion-item><br>
+  <ion-button (click)="handle_submit()" size="small" color="danger" [disabled]="!signup_form.valid">Submit</ion-button>
+  <ion-button (click)="handle_back()" size="small">Back to Login</ion-button>
+</form>
+</ion-card-content>
+<ion-card-content>
+<span *ngIf="flag">Submitted.</span>
+</ion-card-content>
+</ion-card>
+</ion-content>

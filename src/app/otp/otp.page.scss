@@ -1,0 +1,103 @@
+.layout{
+padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1.7rem;
+background:#fcfdfe;
+}
+.layout1{
+padding-left: 3%;
+    padding-right: 3%;
+background:#fcfdfe;
+padding-bottom:1rem;
+}
+.headerimg{
+width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading{
+    margin-left: 4.5%;
+    color: #1a2367;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 1.7rem;;
+    margin-bottom: .3rem;
+}
+.subheading{
+margin-left: 4.5%;
+    color: #040c45;
+    font-size: smaller;
+    opacity: 0.8;
+}
+.otprow{
+width: 91%;
+    margin-left: 4.5%;
+    margin-top: 1.7rem;
+margin-bottom: 1rem;
+}
+.digitinput{
+    width: 4rem;
+    height: 3rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 12px 0 #c6d1ff;
+    border: solid 1px #c6d1ff;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+.divider{
+width:100%;
+border-top: 1px solid #8080804d;
+    margin-top: 2.3rem;
+}
+.vdivider{
+height: 10rem;
+border-right:1px solid #8080804d;
+}
+.hdevider{
+width:6rem;
+border-top: 1px solid #8080804d;
+}
+.key{
+    height: 3rem;
+    width: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    overflow: hidden;
+    position:relative;
+}
+.keyGo{
+height: 3rem;
+    width: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    font-weight: 500;
+    overflow: hidden;
+    position:relative;
+    color:white;
+    background: #4b5dce;;
+    border-radius: 5%;
+}
+.otperror{
+color:red;
+width:100%;
+text-align:center;
+margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
+

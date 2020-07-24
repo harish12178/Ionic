@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="primary">
+   
+        <ion-title>Dashboard</ion-title>
+       
+  </ion-toolbar>
+    
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<br>
+  &nbsp;<span> Welcome {{username}}</span>
+  <ion-card>
+    <ion-card-content *ngIf="flag">
+      <img [src]="photo">
+    </ion-card-content>
+  </ion-card>&nbsp;
+  <ion-button  (click)="clickPicture()">
+    <ion-icon name="camera" slot="start"></ion-icon>
+    <ion-label>Camera</ion-label>
+  </ion-button>
+  <div class="container">&nbsp;
+    <ion-button (click)="handle_logout()" color="danger">
+    <ion-icon name="log-out" slot="start"></ion-icon>
+    <ion-label>Logout</ion-label>
+  </ion-button>
+  </div>
+
+</ion-content>

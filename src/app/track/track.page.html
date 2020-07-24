@@ -1,0 +1,71 @@
+<ion-menu side="start" menuId="menu" contentId="main" class="sidemenu">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    
+  </ion-content>
+</ion-menu>
+<ion-router-outlet id="main"></ion-router-outlet>
+
+<ion-header>
+<mat-toolbar class="main_toolbar">
+
+    <img src="assets/images/-eg-menu.svg" class="menu" (click)="openmenu()">
+
+<span class="fill-space"></span>
+<div fxLayout="column" fxLayoutAlign="space-between center" style="margin-left: -4%;margin-top: 6px;" (click)="handle_tiip()">
+    <div fxLayout="row" fxLayoutAlign="space-between center" class="title">
+        <img src="assets/images/navigation.svg" width="7%">
+        &nbsp;<span>KA-05-AA-1234</span>
+    </div>
+    <div class="underline"></div>
+    <span class="subheader">Tata Signa 2168 - 40 Ft. Trailer</span>
+</div>
+<span class="fill-space"></span>
+
+    <img src="assets/images/bell-musical-tool.svg" class="notification">
+
+</mat-toolbar>
+</ion-header>
+
+<ion-content>
+<div #mapElement style="width:100%;height:100%"></div>
+</ion-content>
+
+<ion-footer>
+	<div fxLayout="column" fxLayoutAlign="space-evenly center" class="footer">
+		<div class="swipeup" (click)="toggle_flag()"></div>
+            <div fxLayout="row" fxLayoutAlign="space-between center" class="timedistance">
+                <span class="duration">20 min</span>  
+                    <div fxLayout="row" fxLayoutAlign="space-between center">
+                        <span class="distance">22 km</span>
+                        <span class="dot"></span>
+                        <span class="distance">10:30 am</span>
+                    </div>
+                       
+            </div>
+	</div>
+
+</ion-footer>
+<ion-footer *ngIf="flag">
+    <div fxLayout="column" fxLayoutAlign="space-evenly start" class="footer1">
+        <div>
+            <span class="current">CURRENT LOCATION</span>
+            <p class="address">25th A Cross, BDA Layout, HSR Layout, Bengaluru, Karnataka. 560102</p>
+        </div>
+        <div>
+            <span class="drop">DROP LOCATION</span>
+            <p class="address">Plot 102/10, Electronics City-1, Bengaluru, Karnataka. 560100</p>
+        </div>
+    </div>
+</ion-footer>
+
+
+
+
+
+
+

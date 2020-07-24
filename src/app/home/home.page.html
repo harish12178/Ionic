@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+
+  <ion-card id="card">
+    <ion-card-content>
+      <ion-item>
+      <ion-label position="stacked">Username</ion-label>
+      <ion-input [(ngModel)]="username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Password</ion-label>
+      <ion-input [(ngModel)]="password"></ion-input>
+    </ion-item>
+     
+    </ion-card-content>
+    <ion-card-content *ngIf="flag">
+    <span class="invalid">Invalid username or password</span>
+    </ion-card-content>
+
+    <ion-button  expand="block" (click)="handle_login()">Login</ion-button><br>
+    <span>Not an user?</span><br>
+    <ion-button expand="block" color="danger" (click)="handle_signup()">Signup</ion-button><br>
+    
+  </ion-card>
+
+</ion-content>
