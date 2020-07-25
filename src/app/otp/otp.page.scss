@@ -3,12 +3,13 @@ padding-left: 3%;
     padding-right: 3%;
     padding-top: 1.7rem;
 background:#fcfdfe;
+height:100%;
 }
 .layout1{
 padding-left: 3%;
     padding-right: 3%;
 background:#fcfdfe;
-padding-bottom:1rem;
+
 }
 .headerimg{
 width:100%;
@@ -55,15 +56,15 @@ border-top: 1px solid #8080804d;
     margin-top: 2.3rem;
 }
 .vdivider{
-height: 10rem;
+height: 13rem;
 border-right:1px solid #8080804d;
 }
 .hdevider{
-width:6rem;
+width:100%;
 border-top: 1px solid #8080804d;
 }
 .key{
-    height: 3rem;
+    height: 3.5rem;
     width: 6rem;
     display: flex;
     align-items: center;
@@ -73,7 +74,7 @@ border-top: 1px solid #8080804d;
     position:relative;
 }
 .keyGo{
-height: 3rem;
+height: 3.5rem;
     width: 6rem;
     display: flex;
     align-items: center;
@@ -91,6 +92,7 @@ color:red;
 width:100%;
 text-align:center;
 margin-top: 1rem;
+margin-bottom: 1rem;
 }
 
 

@@ -41,6 +41,7 @@ add_key(key){
 if(this.index>=4){
 return;
 }
+this.wrongotp=false;
 this.digit[this.index++]=key;
 }
 remove_key(){

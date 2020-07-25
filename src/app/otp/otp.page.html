@@ -14,8 +14,15 @@
 <div class="digitinput">{{digit[3]}}</div>
 </div>
 <div class="otperror" *ngIf="wrongotp">Wrong OTP</div>
-<div class="divider"></div>
-<div fxLayout="row" fxLayoutAlign="space-between center">
+
+</div>
+</ion-content>
+
+
+<ion-footer>
+<div class="layout1">
+
+<div fxLayout="row" fxLayoutAlign="space-between center" style="margin-bottom:1rem;" width="100%">
 <div fxLayout="column" fxLayoutAlign="space-between center">
     <div class="key ion-activatable" (click)="add_key('1')">1<ion-ripple-effect></ion-ripple-effect></div>
     <div class="hdevider"></div>
@@ -51,7 +58,4 @@
 </div>
 </div>
 </div>
-</ion-content>
-
-
-
+</ion-footer>
